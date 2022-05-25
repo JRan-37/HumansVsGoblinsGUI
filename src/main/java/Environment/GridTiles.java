@@ -72,9 +72,9 @@ public class GridTiles {
     private String getTileString(Tiles tile) {
         if(colors) {
             return switch (tile) {
-                case Tiles.DIRT -> Colors.ANSI_RED + "+ " + Colors.ANSI_RESET;
-                case Tiles.GRASS -> Colors.ANSI_GREEN + "+ " + Colors.ANSI_RESET;
-                case Tiles.ROCK -> Colors.ANSI_CYAN + "+ " + Colors.ANSI_RESET;
+                case DIRT -> Colors.ANSI_RED + "+ " + Colors.ANSI_RESET;
+                case GRASS -> Colors.ANSI_GREEN + "+ " + Colors.ANSI_RESET;
+                case ROCK -> Colors.ANSI_CYAN + "+ " + Colors.ANSI_RESET;
             };
         }
         else
